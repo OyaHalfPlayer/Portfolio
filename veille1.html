@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veille - RGPD | Alexandre Bossiaux</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/stylemenu.css" />
+  <link rel="stylesheet" href="css/styleveille.css" />
+</head>
+<body>
+
+<!-- Menu -->
+<div id="menu-container"></div>
+
+<div class="global">
+
+  <!-- Navigation veille -->
+  <div class="veille-nav">
+    <a href="veille1.html" class="veille-nav-btn active">Thème 1 - RGPD</a>
+    <a href="veille2.html" class="veille-nav-btn">Thème 2 - ZTSM</a>
+  </div>
+
+  <!-- En-tête -->
+  <div class="veille-header">
+    <span class="badge">Veille Technologique - Thème 1</span>
+    <h1>Le Règlement Général sur la Protection des Données (RGPD)</h1>
+    <p class="intro">
+      Entré en vigueur en mai 2018, le RGPD est le cadre réglementaire européen qui encadre la collecte, le traitement et la conservation des données personnelles. Il impose des obligations strictes aux organisations et renforce les droits des individus sur leurs données.
+    </p>
+  </div>
+
+  <!-- Définition -->
+  <div class="veille-section">
+    <h2><span class="icon icon-book"></span> Qu'est-ce que le RGPD ?</h2>
+    <p>
+      Le <strong>Règlement Général sur la Protection des Données</strong> (RGPD, ou GDPR en anglais) est un règlement de l'Union européenne adopté en avril 2016 et applicable depuis le <strong>25 mai 2018</strong>. Il remplace la directive 95/46/CE et constitue la loi la plus complète au monde en matière de protection des données personnelles.
+    </p>
+    <p>
+      Il s'applique à toute organisation, publique ou privée, européenne ou non, dès lors qu'elle traite des données de résidents européens. Cela inclut aussi bien les grandes entreprises tech que les PME, les associations ou encore les administrations publiques.
+    </p>
+    <div class="highlight-box">
+      <p>« Toute information se rapportant à une personne physique identifiée ou identifiable » constitue une donnée personnelle au sens du RGPD : nom, adresse IP, localisation, données biométriques, etc.</p>
+    </div>
+  </div>
+
+  <!-- Principes fondamentaux -->
+  <div class="veille-section">
+    <h2><span class="icon icon-scale"></span> Les 7 principes fondamentaux</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>1. Licéité, loyauté, transparence</h3>
+        <p>Le traitement doit reposer sur une base légale (consentement, contrat, obligation légale…) et l'utilisateur doit être informé clairement.</p>
+      </div>
+      <div class="card">
+        <h3>2. Limitation des finalités</h3>
+        <p>Les données doivent être collectées pour des finalités déterminées, explicites et légitimes, et ne pas être traitées à d'autres fins.</p>
+      </div>
+      <div class="card">
+        <h3>3. Minimisation des données</h3>
+        <p>Seules les données strictement nécessaires à la finalité déclarée peuvent être collectées. Pas de sur-collecte.</p>
+      </div>
+      <div class="card">
+        <h3>4. Exactitude</h3>
+        <p>Les données doivent être exactes et mises à jour. Les données inexactes doivent être corrigées ou supprimées rapidement.</p>
+      </div>
+      <div class="card">
+        <h3>5. Limitation de la conservation</h3>
+        <p>Les données ne peuvent être conservées que le temps nécessaire à la finalité pour laquelle elles ont été collectées.</p>
+      </div>
+      <div class="card">
+        <h3>6. Intégrité et confidentialité</h3>
+        <p>Des mesures techniques et organisationnelles doivent garantir la sécurité des données contre les accès non autorisés ou les pertes.</p>
+      </div>
+      <div class="card">
+        <h3>7. Responsabilité (Accountability)</h3>
+        <p>L'organisation doit être en mesure de démontrer sa conformité à tout moment, via une documentation adaptée.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Droits des personnes -->
+  <div class="veille-section">
+    <h2><span class="icon icon-users"></span> Les droits des personnes concernées</h2>
+    <ul class="veille-list veille-list-droits">
+      <li><strong>Droit d'accès</strong> Toute personne peut demander à savoir quelles données la concernant sont traitées et en obtenir une copie.</li>
+      <li><strong>Droit de rectification</strong> Les données inexactes ou incomplètes peuvent être corrigées à la demande de l'individu.</li>
+      <li><strong>Droit à l'effacement</strong> Aussi appelé « droit à l'oubli », il permet de demander la suppression des données sous certaines conditions.</li>
+      <li><strong>Droit à la portabilité</strong> Les données peuvent être récupérées dans un format lisible par machine pour être transférées à un autre service.</li>
+      <li><strong>Droit d'opposition</strong> L'individu peut s'opposer à certains traitements, notamment à des fins de prospection commerciale.</li>
+      <li><strong>Droit à la limitation du traitement</strong> Le traitement peut être suspendu dans l'attente d'une contestation ou d'une vérification.</li>
+      <li><strong>Droits liés à la décision automatisée</strong> Protection contre les décisions prises uniquement par algorithme sans intervention humaine.</li>
+    </ul>
+  </div>
+
+  <!-- Évolutions récentes -->
+  <div class="veille-section">
+    <h2><span class="icon icon-calendar"></span> Évolutions et actualités récentes</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="date">2018</div>
+        <h3>Entrée en application du RGPD</h3>
+        <p>Le 25 mai 2018, le RGPD devient contraignant dans toute l'UE. Les premières plaintes sont déposées dès les premières heures.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">2019</div>
+        <h3>Première grande amende - Google (50 M€)</h3>
+        <p>La CNIL française inflige une amende record à Google pour manque de transparence dans la gestion du consentement publicitaire.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">2021</div>
+        <h3>Amazon (746 M€) et WhatsApp (225 M€)</h3>
+        <p>Des sanctions historiques sont prononcées au Luxembourg et en Irlande, démontrant la portée extraterritoriale du règlement.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">2023</div>
+        <h3>Meta condamné à 1,2 milliard d'euros</h3>
+        <p>L'amende la plus élevée jamais prononcée sous le RGPD, suite au transfert illégal de données d'utilisateurs européens vers les États-Unis.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">2024 - 2025</div>
+        <h3>RGPD, Intelligence Artificielle et Sanctions</h3>
+        <p>L'AI Act européen entre en vigueur, interagissant étroitement avec le RGPD. L'EDPB (CEPD) publie des lignes directrices strictes sur l'entraînement des modèles d'IA. La CNIL intensifie ses contrôles et publie son bilan des sanctions 2024, marquant une sévérité accrue envers les manquements liés aux données d'entraînement.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Obligations entreprises -->
+  <div class="veille-section">
+    <h2><span class="icon icon-building"></span> Obligations des organisations</h2>
+    <p>
+      Le RGPD impose aux organisations plusieurs obligations concrètes, sous peine de sanctions pouvant atteindre <strong>20 millions d'euros</strong> ou <strong>4 % du chiffre d'affaires annuel mondial</strong>.
+    </p>
+    <ul class="veille-list veille-list-obligations">
+      <li><strong>Registre des traitements</strong> Tenir un inventaire de tous les traitements de données réalisés par l'organisation.</li>
+      <li><strong>Analyse d'impact (AIPD)</strong> Réaliser une étude de risque avant tout traitement susceptible de présenter un risque élevé pour les individus, tout en suivant les recommandations de sécurité de l'ANSSI.</li>
+      <li><strong>Délégué à la Protection des Données (DPO)</strong> Nommer un responsable RGPD dans les organisations traitant des données à grande échelle.</li>
+      <li><strong>Notification des violations</strong> Toute fuite de données doit être signalée à la CNIL sous 72 heures, et aux personnes concernées si le risque est élevé.</li>
+      <li><strong>Privacy by Design & by Default</strong> Intégrer la protection des données dès la conception des produits et services.</li>
+      <li><strong>Contrats avec les sous-traitants</strong> Encadrer contractuellement tout prestataire qui traite des données pour le compte de l'organisation.</li>
+    </ul>
+  </div>
+
+  <!-- Enjeux -->
+  <div class="veille-section">
+    <h2><span class="icon icon-telescope"></span> Enjeux et perspectives</h2>
+    <p>
+      Le RGPD a engendré une prise de conscience mondiale sur la valeur des données personnelles. De nombreux pays se sont inspirés de ce modèle pour légiférer : la Californie avec le CCPA, le Brésil avec la LGPD, ou encore le Japon avec son APPI révisé.
+    </p>
+    <p>
+      L'essor de l'intelligence artificielle générative pose de nouvelles questions : comment garantir la conformité RGPD lorsque les données d'entraînement sont issues du web ? Comment exercer son droit à l'effacement sur un modèle déjà entraîné ? Ces défis font l'objet de nombreux travaux des autorités de protection des données en Europe.
+    </p>
+    <div class="highlight-box">
+      <p>Le RGPD n'est pas une contrainte figée : c'est un cadre évolutif qui s'adapte aux nouvelles réalités technologiques, notamment via les lignes directrices publiées régulièrement par le Comité Européen de la Protection des Données (CEPD).</p>
+    </div>
+  </div>
+
+  <!-- Sources -->
+  <div class="veille-section">
+    <h2><span class="icon icon-link"></span> Sources</h2>
+    <ul class="sources-list">
+      <li><a href="https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on" target="_blank">CNIL - RGPD : de quoi parle-t-on ?</a></li>
+      <li><a href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX:32016R0679" target="_blank">Texte officiel du RGPD - EUR-Lex</a></li>
+      <li><a href="https://edpb.europa.eu/edpb_fr" target="_blank">Comité Européen de la Protection des Données (CEPD)</a></li>
+      <li><a href="https://www.cnil.fr/fr/les-sanctions-de-la-cnil" target="_blank">CNIL - Sanctions et amendes prononcées</a></li>
+      <li><a href="https://gdpr.eu/" target="_blank">GDPR.eu - Ressources pratiques sur le RGPD</a></li>
+      <li><a href="https://edpb.europa.eu/our-work-tools/general-guidance/guidelines-recommendations-best-practices_fr" target="_blank">EDPB - Lignes directrices sur l'Intelligence Artificielle et les données</a></li>
+      <li><a href="https://www.cnil.fr/fr/bilan-de-laction-repressive-de-la-cnil-en-2024" target="_blank">CNIL - Bilan de l'action répressive et des sanctions 2024</a></li>
+      <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank">EUR-Lex - AI Act et son interaction avec le RGPD</a></li>
+      <li><a href="https://www.anssi.fr/publications/recommandations-de-securite-pour-la-protection-des-donnees/" target="_blank">ANSSI - Recommandations de sécurité pour la protection des données</a></li>
+      <li><a href="https://fra.europa.eu/fr/theme/protection-des-donnees-et-vie-privee" target="_blank">FRA - Droits fondamentaux de l'UE sur la vie privée</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<script src="js/load-menu.js"></script>
+</body>
+</html>

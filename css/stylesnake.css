@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 60px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.global {
+    font-family: var(--font-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.game-container {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px; 
+}
+
+.game-header {
+    background-color: rgba(125, 168, 255, 0.15); 
+    color: var(--primary-accent);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.game-canvas-container {
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    background: #FAFCFF; 
+    overflow: hidden;
+    border-bottom: 2px solid var(--glass-border); 
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.game-controls {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(250, 252, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid var(--glass-border);
+}
+
+.score-board {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: var(--primary-accent);
+    font-size: 1.4rem;
+    font-weight: 800;
+    z-index: 10;
+    background: rgba(255,255,255,0.9);
+    padding: 5px 15px;
+    border-radius: var(--radius-pill);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.start-screen, .game-over-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    color: var(--text-main);
+    z-index: 20;
+    text-align: center;
+}
+
+.start-screen h2, .game-over-screen h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color: var(--primary-accent);
+}
+
+.start-screen p, .game-over-screen p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--text-muted);
+}
+
+button {
+    background-color: var(--primary-accent);
+    color: white;
+    border: none;
+    border-radius: var(--radius-pill);
+    padding: 14px 35px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 4px 15px rgba(125, 168, 255, 0.3);
+}
+
+button:hover {
+    background-color: var(--secondary-accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.instructions {
+    margin-top: 5px;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.hidden {
+    display: none;
+}
+
+.dpad {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    width: 140px; 
+    margin-top: 10px;
+    gap: 8px; 
+}
+
+.dpad-button {
+    background-color: white;
+    color: var(--text-main);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.dpad-button:hover {
+    background-color: var(--primary-accent);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.dpad-horizontal {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .game-canvas-container {
+        height: 300px; 
+    }
+    
+    .start-screen h2, .game-over-screen h2 {
+        font-size: 2rem;
+    }
+
+    .dpad {
+        width: 110px;
+    }
+    .dpad-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
